@@ -77,7 +77,7 @@ Then we create requirements.txt where we define needed Python module:
 ```
 urllib3
 ```
-Last but least, we create a playbook (test.yml) that checks if the required Python module is install in our EE:
+Last but least, we create a playbook (test.yml) that checks if the required Python module is installed in our EE:
 ```
 ---
 - hosts: localhost
@@ -104,7 +104,8 @@ Verify that the images has been created:
 REPOSITORY                                 TAG         IMAGE ID      CREATED         SIZE
 localhost/jbond_ee_image                   0.0.7       6485ad35289a  10 seconds ago  747 MB
 ```
-For the purpose of the demo, run the test.yml locally and let it fail (given that you have not installed the rquired Python module locally):
+For the purpose of the demo, run the test.yml locally and let it fail (given that you have not installed the required Python module locally). 
+Depending on setup, this will throw and error, or give an output like this:
 ```
 ❯ ansible-playbook test.yml
 [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost
