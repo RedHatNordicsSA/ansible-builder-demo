@@ -50,7 +50,7 @@ setuptools          53.0.0
 six                 1.16.0
 wheel               0.37.0
 ```
-Now we need to create some files to define our Execution Enviroment (EE): (..or just do a git clone from this repo)
+Now we need to create some files to define our Execution Enviroment (EE): (..or just do a git clone from this repo, and move the files to ansible-builder folder)
 
 Create execution-enviroment.yml
 ```
