@@ -105,7 +105,7 @@ REPOSITORY                                 TAG         IMAGE ID      CREATED    
 localhost/jbond_ee_image                   0.0.7       6485ad35289a  10 seconds ago  747 MB
 ```
 For the purpose of the demo, run the test.yml locally and let it fail (given that you have not installed the required Python module locally). 
-Depending on setup, this will throw and error, or give an output like this:
+Depending on setup, this will throw an error, or give an output like this:
 ```
 ❯ ansible-playbook test.yml
 [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost
@@ -124,7 +124,7 @@ ok: [localhost] => {
 PLAY RECAP ************************************************************************************************
 localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 ```
-Notice the "nope, not installed". Then let's run the playbook in our newly created EE:
+Notice the "nope, not installed". Then let's run the playbook inside our newly created EE:
 ```
 ansible-navigator run -m stdout --eei jbond_ee_image:0.0.7 test.yml
 ```
