@@ -3,7 +3,7 @@
 A short and simple demo of how to build an Ansible Execution Environment and execute playbooks in it.
 
 ### Setup: (Tested with Fedora 34, RHEL 8 and MacOS Big Sur)
-For MacOS, I've used Podman client with a Fedora machine as host. How to setup client this is described here:
+For MacOS, I've used Podman client with a Fedora machine as host. How to setup client is described here:
 https://github.com/containers/podman/blob/main/docs/tutorials/mac_win_client.md
 (Remember to configure the setup with a ed25519 ssh key, default rsa in MacOS will fail to authenticate)
 
